@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,14 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
-# OtherWordly
-A social app about generating words for moments that have no words to describe them.
-
-
-#step 1. create new rails app
-
-#step 2. import html, and create a root file 
-
-polymorphic relationship
->>>>>>> eac18bb70eb2ad6f0377eb09efab5ddb37fbee1d
