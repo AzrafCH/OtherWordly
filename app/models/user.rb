@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    this is a fucking change.
+    has_secure_password
 end
