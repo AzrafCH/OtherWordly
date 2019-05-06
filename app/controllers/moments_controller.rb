@@ -18,4 +18,10 @@ class MomentsController < ApplicationController
         redirect_to moment_path(@moment)
     end 
 
+    private 
+
+    def moment_params
+        params.require(:moment).permit(:post_title, :define)
+    end 
+
 end
