@@ -13,7 +13,7 @@
          <% @moments.each do |moment| %>
           <li data-id="1557121998480" class="">
             <div class = "view">
-                <label><%= link_to moment.define, moment_path(moment) %></label>
+                <label><%= link_to moment.post_title, moment_path(moment) %></label>
             </div>
           </li>
          <% end %>

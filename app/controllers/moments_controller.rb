@@ -10,7 +10,7 @@ class MomentsController < ApplicationController
     end 
 
     def create 
-        @moment = Moment.new 
+        @moment = Moment.new(moment_params) 
         @moment.post_title = params[:moment][:post_title]
         @moment.define = params[:moment][:define]
         @moment.save 
