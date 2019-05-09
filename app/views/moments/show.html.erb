@@ -1,16 +1,23 @@
 <section class="todoapp">
-        <header class="header">
-        <h1><%=@moment.post_title%><h1>
-		    <h2><%=@moment.define%></h2>
-	</header>
-                <section class="main" style="display: block;">
-                        <ul class="todo-list">
-                                <li data-id="1557121998480" class="">
-                                   <div class = "view">
-                                      <label></label>
-                                   </div>
-                                </li>
-
-                        </ul>
-		</section>
+ <header class="header">
+ <h2><%= @moment.define %><h2>
+ </header>
+ 
+<section class="main" style="display: block;">
+  <ul class="todo-list">
+    <% @moment.words.each do |word| %>
+   <li>
+     <div class = "view">
+      <label><%= word.name %></label>
+     </div>
+   </li>
+   <% end %> 
+ </ul>
+ <%= form_for([@moment, @word]) do |f| %>
+        <%= f.text_field :name, :class => "new-todo", :placeholder => "Place your Word"%>
+        <%= f.submit :style => "display: none" %> 
+    <% end %>
+</section>
+<footer class="footer">
+  </footer>
 </section>
